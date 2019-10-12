@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Symptom Checker</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" >
+  <link rel="stylesheet" href="../css/app.css" >
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/skel.css">
+  <link rel="stylesheet" href="../css/style-xlarge.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <link data-require="font-awesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+  <script data-require="angular.js@1.5.3" data-semver="1.5.3" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script data-require="ui-bootstrap@*" data-semver="1.3.2" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-1.3.2.js"></script>
+  <script src="../jquery/main.module.js"></script>
+</head>
+<body>
+<header class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="./HomePage.html" class="w3-bar-item w3-button">Doc Doc!</a>
+            <div class="w3-right w3-hide-small">
+            <a href="./RunDiagnosis.html" class="w3-bar-item w3-button">Diagnosis</a>
+            <a href="#menu" class="w3-bar-item w3-button">Find a Doc!</a>
+            <a href="#menu" class="w3-bar-item w3-button">Records</a>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">feature</a>
+                <a href="#">feature</a>
+                <a href="#">feature</a>
+                <a href="./Login.html">Login</a>
+                </div>
+                <span style="cursor:pointer" class="w3-bar-item w3-button" onclick="openNav()">Others</span>
+            </div>
+        </div>
+        </header>
+  <div class="wrapper">
+    <h1 class="subheader-text"><small>Symptoms</small></h1>
+    <h1 class="header-text">Symptom Checker</h1>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <nav>
+          <ul class="pagination">
+            <li class="active">
+              <a href="#">
+                <h2 class="header-text">1</h2>
+                <p>Choose a symptom</p>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="disabled">
+              <a href="#">
+                <h2 class="header-text">2</h2>
+                <p>View possible Disease</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="symptomsList" class="list-group">
+          <template id="symptomsListTemplate">
+            <button id="{{symptom}}" type="button" class="list-group-item symptomItem text-uppercase">{{ symptom }}</button>
+          </template>
+        </div>
+        <form autocomplete="off" action="./SymptomChecker2.html">
+            <div class="autocomplete" style="width:300px;" onclick="newElement()">
+              <input id="myInput" type="text" name="Disease" placeholder="Disease">
+            </div>
+            <input type="submit">
+        <ul id="myUL">
+          <li  class="checked rand" style="display: none;"></li>
+        </ul>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../jquery/Drop.js"></script>
+  <script src="../jquery/Todo.js"></script>
+</body>
+</html>
