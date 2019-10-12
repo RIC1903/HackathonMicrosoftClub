@@ -1,0 +1,47 @@
+.wrapper {
+	margin: 0 auto;
+	width: 70%;
+}
+.nav-wrapper {
+	margin: 0 auto;
+	width: 70%;
+}
+.header-text {
+	margin-top: 0;
+}
+.subheader-text {
+	margin-bottom: 0;
+}
+.list-group {
+	margin: 0 auto;
+	width: 70%;
+}
+.wrapper .header-login {
+	margin-top: 75px;
+	margin-bottom: 25px;
+}
+
+.login-panel {
+	width: 375px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+.register-panel {
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+.login-button {
+	margin-bottom: 50px;
+}
+
+input[type=text] {
+	width: 130px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+  }
+  input[type=text]:focus {
+	width: 100%;
+  }
