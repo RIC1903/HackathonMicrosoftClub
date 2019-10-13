@@ -57,12 +57,8 @@
             </li>
           </ul>
         </nav>
-        <div id="symptomsList" class="list-group">
-          <template id="symptomsListTemplate">
-            <button id="{{symptom}}" type="button" class="list-group-item symptomItem text-uppercase">{{ symptom }}</button>
-          </template>
-        </div>
-        <form autocomplete="off" action="./SymptomChecker2.html">
+        
+        <!-- <form autocomplete="off" action="">
             <div class="autocomplete" style="width:300px;" onclick="newElement()">
               <input id="myInput" type="text" name="Disease" placeholder="Disease">
             </div>
@@ -70,12 +66,70 @@
         <ul id="myUL">
           <li  class="checked rand" style="display: none;"></li>
         </ul>
-          </form>
+          </form> -->
+          <form action="#" style="margin-top: 7%;
+          margin-left: 30%;
+          margin-right: 30%;" >
+              Itching: <input type="text" id="0" onclick="myFunction()"><br>
+              Skin Rash: <input type="text" id="1" onclick="myFunction()"><br>
+              Nodal Skin: <input type="text" id="2" onclick="myFunction()"><br>
+              Continous sneezing: <input type="text" id="3" onclick="myFunction()"><br>
+              Shivering: <input type="text" id="4" onclick="myFunction()"><br>
+              Chills: <input type="text" id="5" onclick="myFunction()"><br>
+              Joint Pain: <input type="text" id="6" onclick="myFunction()"><br>
+              Stomach Pain: <input type="text" id="7" onclick="myFunction()"><br>
+              Acidity: <input type="text" id="8" onclick="myFunction()"><br>
+              Ulcers on tounge: <input type="text" id="9" onclick="myFunction()"><br>
+              Muscle Wasting: <input type="text" id="10" onclick="myFunction()"><br>
+              Vomiting: <input type="text" id="11" onclick="myFunction()"><br>
+              Burning: <input type="text" id="12" onclick="myFunction()"><br>
+              Spotting Urination: <input type="text" id="13" onclick="myFunction()"><br>
+              fatique: <input type="text" id="14" onclick="myFunction()"><br>
+              Weight gain: <input type="text" id="15" onclick="myFunction()"><br>
+              Axiety: <input type="text" id="16" onclick="myFunction()"><br>
+              Cold hands and fits: <input type="text" id="17" onclick="myFunction()"><br>
+              Mood Swings: <input type="text" id="18" onclick="myFunction()"><br>
+              Weight Loss: <input type="text" id="19" onclick="myFunction()"><br>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+            <script>
+                function myFunction(myCheck) {
+                  var checkBox = document.getElementById(myCheck);
+                  var text = document.getElementById("text");
+                  if (checkBox.checked == true){
+                    text.style.display = "block";
+                  } else {
+                     text.style.display = "none";
+                  }
+                }
+                myFunction('0');
+                myFunction('1');
+                myFunction('2');
+                myFunction('3');
+                myFunction('4');
+                myFunction('5');
+                myFunction('6');
+                myFunction('7');
+                myFunction('8');
+                myFunction('9');
+                myFunction('10');
+                myFunction('11');
+                myFunction('12');
+                myFunction('13');
+                myFunction('14');
+                myFunction('15');
+                myFunction('16');
+                myFunction('17');
+                myFunction('18');
+
+                </script>
       </div>
     </div>
   </div>
 
   <script src="../jquery/Drop.js"></script>
+  <script src="../jquery/Search.js"></script>
   <script src="../jquery/Todo.js"></script>
 </body>
 </html>
