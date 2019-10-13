@@ -1,0 +1,31 @@
+app.post('/',urlencodedParser,(req,res)=>{
+    var a=req.body.a;
+    console.log(a)
+    var b=req.body.b;
+    console.log(b)
+    var c=req.body.c;
+    console.log(c)
+    var d=req.body.d;
+    console.log(d)
+    var e=req.body.e;
+    console.log(e)
+    var f=req.body.f;
+    console.log(f)
+    var g=req.body.g;
+    console.log(g)
+    var h=req.body.h;
+    console.log(h)
+
+    var process = spawn('python.exe',["./test.py", 
+    a,b,c,d,e,f,g,h] ); 
+    console.log('created child')
+    process.on('error', (code) => {
+        console.log('inside error')
+        console.log(`Exit code is: ${code}`);
+    });
+    process.stdout.on('data', function(data) { 
+        console.log('inside data')
+        console.log(data.toString());
+
+    })
+})
