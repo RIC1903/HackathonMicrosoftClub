@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>DOC DOC!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/public/home.css">
+<link rel="stylesheet" href="/public/skel.css">
+<link rel="stylesheet" href="/public/style-xlarge.css">
+<link rel="stylesheet" href="/public/style.css">
+<link rel="stylesheet" href="/public/form.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<header class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/Homepage" class="w3-bar-item w3-button">Doc Doc!</a>
+    <div class="w3-right w3-hide-small">
+      <a href="/RunDiagnosis" class="w3-bar-item w3-button">Diagnosis</a>
+      <a href="/maps" class="w3-bar-item w3-button">Find a Clinic!</a>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Account</a>
+          <a href="./Login.html">Login</a>
+        </div>
+        <span style="cursor:pointer" class="w3-bar-item w3-button" onclick="openNav()">Others</span>
+    </div>
+  </div>
+</header>
+<form action="/Diabetes" style="margin-top: 7%;
+margin-left: 30%;
+margin-right: 30%;" method="POST" >
+    <label for="a" style="margin: 1em 0 0 0;">Number of Pregnancy: </label>
+    <input type="text" id="NOP" name="NOP" placeholder="Number of Pregnancy.....">
+  
+    <label for="b" style="margin: 1em 0 0 0;">Glucose Level: </label>
+    <input type="text" id="glu" name="glu" placeholder="Glucose.....">
+    
+    <label for="c" style="margin: 1em 0 0 0;">Blood Pressure: </label>
+    <input type="text" id="bp" name="bp" placeholder="Blood Pressure.....">
+  
+    <label for="d" style="margin: 1em 0 0 0;">Skin Thickness: </label>
+    <input type="text" id="sk" name="sk" placeholder="Skin Thickness.....">
+  
+    <label for="e" style="margin: 1em 0 0 0;">Insulin: </label>
+    <input type="text" id="In" name="In" placeholder="Insulin.....">
+  
+    <label for="f" style="margin: 1em 0 0 0;">Body Mass Index: </label>
+    <input type="text" id="bmi" name="bmi" placeholder="BMI.....">
+  
+    <label for="g" style="margin: 1em 0 0 0;">Pedgree Function: </label>
+    <input type="text" id="pf" name="pf" placeholder="Pedgree Function.....">
+  
+    <label for="h" style="margin: 1em 0 0 0;">Age: </label>
+    <input type="text" id="age" name="age" placeholder="Age.....">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="../../public/Drop.js"></script>
+</body>
+</html>

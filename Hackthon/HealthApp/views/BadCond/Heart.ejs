@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>DOC DOC!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/public/home.css">
+<link rel="stylesheet" href="/public/skel.css">
+<link rel="stylesheet" href="/public/style-xlarge.css">
+<link rel="stylesheet" href="/public/style.css">
+<link rel="stylesheet" href="/public/form.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<header class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/Homepage" class="w3-bar-item w3-button">Doc Doc!</a>
+    <div class="w3-right w3-hide-small">
+      <a href="./RunDiagnosis.html" class="w3-bar-item w3-button">Diagnosis</a>
+      <a href="#" class="w3-bar-item w3-button">Find a Clinic!</a>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Feature</a>
+          <a href="#">Feature</a>
+          <a href="#">Feature</a>
+          <a href="./Login.html">Login</a>
+        </div>
+        <span style="cursor:pointer" class="w3-bar-item w3-button" onclick="openNav()">Others</span>
+    </div>
+  </div>
+</header>
+<form action="#" style="margin-top: 7%;
+margin-left: 30%;
+margin-right: 30%;" >
+    <label for="a" style="margin: 1em 0 0 0;">Age: </label>
+    <input type="text" id="age" name="age" placeholder="Age.....">
+  
+    <label for="b" style="margin: 1em 0 0 0;">Sex: </label>
+    <input type="text" id="sex" name="sex" placeholder="Sex.....">
+    
+    <label for="cp">cp: </label>
+    <select id="cp" name="cp">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <label for="d" style="margin: 1em 0 0 0;">Trest BPS: </label>
+    <input type="text" id="tb" name="tb" placeholder="Trest BPS.....">
+  
+    <label for="e" style="margin: 1em 0 0 0;">Cholestrol: </label>
+    <input type="text" id="ch" name="ch" placeholder="Cholestrol.....">
+  
+    <label for="fbs">fbs: </label>
+    <select id="fbs" name="fbs">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+
+    <label for="res">Rest ECG: </label>
+    <select id="res" name="res">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+
+    <label for="g" style="margin: 1em 0 0 0;">Thalach: </label>
+    <input type="text" id="tha" name="tha" placeholder="Thalach.....">
+  
+    <label for="h" style="margin: 1em 0 0 0;">Exang: </label>
+    <input type="text" id="ex" name="ex" placeholder="Exang.....">
+    
+    <label for="i" style="margin: 1em 0 0 0;">Oldpeak: </label>
+    <input type="text" id="op" name="op" placeholder="Oldpeak.....">
+
+    <label for="slo">Slope: </label>
+    <select id="slo" name="slo">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+
+    <label for="ca">Ca: </label>
+    <select id="ca" name="ca">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+
+    <label for="j" style="margin: 1em 0 0 0;">Thal: </label>
+    <input type="text" id="th" name="th" placeholder="Thal.....">
+
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="../../public/Drop.js"></script>
+</body>
+</html>

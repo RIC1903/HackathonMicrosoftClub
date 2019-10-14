@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>DOC DOC!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/public/home.css">
+<link rel="stylesheet" href="/public/skel.css">
+<link rel="stylesheet" href="/public/style-xlarge.css">
+<link rel="stylesheet" href="/public/style.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<header class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/Homepage" class="w3-bar-item w3-button">Doc Doc!</a>
+    <div class="w3-right w3-hide-small">
+      <a href="/RunDiagnosis" class="w3-bar-item w3-button">Diagnosis</a>
+      <a href="/maps" class="w3-bar-item w3-button">Find a Clinic!</a>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Account</a>
+          <a href="/">LogOut</a>
+        </div>
+        <span style="cursor:pointer" class="w3-bar-item w3-button" onclick="openNav()">Others</span>
+    </div>
+  </div>
+  <div>
+      <h1 style="margin-left: 50%;margin-top:5%;"><%= val %></h1>
+  </div>
+</header>
+
+
+  <script src="../public/Drop.js"></script>
+</body>
+</html>
